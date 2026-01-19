@@ -1,0 +1,233 @@
+/* ===== Animated Gradient Background ===== */
+.animated-bg {
+  background: linear-gradient(120deg, #020617, #0f172a, #0e7490);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===== Glassmorphism Card ===== */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  padding: 12px 28px;
+  border-radius: 999px;
+  background: #22d3ee;
+  color: black;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(34, 211, 238, 0.5);
+}
+
+.btn-secondary {
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: 2px solid #22d3ee;
+  color: #22d3ee;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #22d3ee;
+  color: black;
+}
+
+/* ===== About Cards ===== */
+.about-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 16px 20px;
+  border-radius: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(34, 211, 238, 0.25);
+}
+
+/* ===== Scroll Reveal ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal.delay {
+  transition-delay: 0.2s;
+}
+
+/* ===== Project Cards ===== */
+.project-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 28px;
+  transition: all 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(34, 211, 238, 0.2);
+}
+
+/* Tech Tags */
+.tag {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: rgba(34, 211, 238, 0.15);
+  color: #67e8f9;
+}
+
+/* ===== Skill Cards ===== */
+.skill-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 26px;
+  transition: all 0.4s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(34, 211, 238, 0.18);
+}
+
+/* ===== Cloud Floating Orbs ===== */
+.cloud-orb {
+  position: fixed;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(34,211,238,0.25), transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+  animation: floatCloud 18s infinite alternate ease-in-out;
+}
+
+.orb-1 {
+  top: 10%;
+  left: -100px;
+}
+
+.orb-2 {
+  bottom: 20%;
+  right: -120px;
+  animation-duration: 22s;
+}
+
+.orb-3 {
+  top: 50%;
+  right: 20%;
+  animation-duration: 26s;
+}
+
+@keyframes floatCloud {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-80px);
+  }
+}
+
+/* ===== Timeline ===== */
+.timeline-item {
+  position: relative;
+  padding-left: 10px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -49px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: #22d3ee;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.7);
+}
+
+/* ===== Contact Cards ===== */
+.contact-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 28px 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  color: #e5e7eb;
+}
+
+.contact-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0 6px;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(34, 211, 238, 0.25);
+  color: white;
+}
+
+/* Active navbar link */
+.nav-link.active {
+  color: #22d3ee;
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #22d3ee;
+  border-radius: 2px;
+}
+
+/* Resume CTA pulse */
+.pulse-resume {
+  animation: pulseGlow 3s infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 rgba(34, 211, 238, 0.0);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(34, 211, 238, 0.0);
+  }
+}
