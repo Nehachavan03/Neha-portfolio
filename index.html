@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neha Chavan | Portfolio</title>
+    <!-- SEO Meta -->
+<meta name="description" content="Neha Chavan | Cloud Computing & AI Enthusiast | Portfolio" />
+<meta name="author" content="Neha Chavan" />
+
+<!-- Open Graph (LinkedIn, WhatsApp) -->
+<meta property="og:title" content="Neha Chavan | Portfolio" />
+<meta property="og:description" content="Cloud Computing & AI Enthusiast | BTech CSE Student" />
+<meta property="og:type" content="website" />
+
+<!-- Optional: add once you deploy -->
+<!-- <meta property="og:image" content="https://yourdomain.com/preview.png" /> -->
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+
+<body class="bg-gray-950 text-white pt-16">
+  <div class="scroll-progress"></div>
+
+
+    <!-- ================= NAVBAR ================= -->
+<header class="fixed top-0 left-0 w-full z-50">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center glass-nav">
+
+    <h1 class="text-lg font-bold text-cyan-400">
+      Neha<span class="text-white">Chavan</span>
+    </h1>
+
+    <ul class="hidden md:flex gap-8 text-sm font-medium">
+    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+    <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+    <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+    <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+
+    </ul>
+
+  </nav>
+</header>
+
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+
+    <!-- Animated Background -->
+    <div class="absolute inset-0 animated-bg"></div>
+    <!-- Tech Circuit Overlay -->
+<svg
+  class="absolute inset-0 w-full h-full opacity-20 pointer-events-none"
+  viewBox="0 0 800 600"
+  fill="none"
+>
+  <path d="M50 100 H300 V200 H500" stroke="#22d3ee" stroke-width="1" />
+  <path d="M200 50 V300 H600" stroke="#22d3ee" stroke-width="1" />
+  <path d="M100 400 H700" stroke="#22d3ee" stroke-width="1" />
+</svg>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-3xl text-center px-6 py-14 glass-card hero-boot">
+
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Hi, I’m <span class="text-cyan-400">Neha Chavan</span>
+      </h1>
+
+      <h2 class="text-xl md:text-2xl font-medium mb-6">
+        <span id="typing-text"></span>
+      </h2>
+
+      
+      <p class="text-gray-300 max-w-xl mx-auto mb-8">
+        Computer Science undergraduate passionate about Cloud Computing,
+        Artificial Intelligence, and scalable intelligent systems.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-6">
+  <a href="#about" class="btn-primary">About Me</a>
+
+  <a
+  href="Neha_Chavan_Resume.pdf"
+  download
+  class="btn-secondary pulse-resume"
+>
+  Download My Resume
+</a>
+
+
+  <a href="#contact" class="btn-secondary">Contact Me</a>
+</div>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ME SECTION ================= -->
+  <section id="about" class="py-24 bg-gray-950">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+
+      <!-- Profile Image -->
+      <div class="flex justify-center">
+        <div class="glass-card p-4 hover:scale-105 transition duration-500">
+          <img
+            src="profile.png"
+            alt="Neha Chavan"
+            class="w-72 h-72 object-cover rounded-2xl"
+          />
+        </div>
+      </div>
+
+      <!-- About Content -->
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          About <span class="text-cyan-400">Me</span>
+        </h2>
+
+        <div class="reveal">
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            I am a Computer Science undergraduate with a strong interest in
+            <span class="text-cyan-400"> Cloud Computing</span> and
+            <span class="text-cyan-400"> Artificial Intelligence</span>.
+            I enjoy understanding how intelligent systems are built,
+            deployed, and scaled using cloud infrastructure.
+          </p>
+        </div>
+
+        <div class="reveal delay">
+          <p class="text-gray-400 mb-10 leading-relaxed">
+            I actively participate in technical communities like IEEE,
+            work on academic and mini-projects, and continuously strengthen
+            my fundamentals through hands-on learning.
+          </p>
+        </div>
+
+        <!-- Highlights -->
+       <div class="grid sm:grid-cols-2 gap-6 reveal">
+  <div class="about-pill">☁️ Cloud & AWS Fundamentals</div>
+  <div class="about-pill">🤖 AI & ML Foundations</div>
+  <div class="about-pill">🎓 BTech CSE (CGPA: 8.39)</div>
+  <div class="about-pill">🌱 Continuous Learner</div>
+</div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+<section id="projects" class="py-24 bg-gray-950">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-14 reveal">
+      My <span class="text-cyan-400">Projects</span>
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- Project Card 1 -->
+      <div class="project-card reveal">
+        <h3 class="text-xl font-semibold mb-3">
+          Smart Classroom System
+        </h3>
+
+        <p class="text-gray-400 mb-5 leading-relaxed">
+          Academic project designed to improve digital learning through
+          attendance tracking and centralized resource sharing, with
+          cloud-based scalability concepts.
+        </p>
+
+        <!-- Tech Pills -->
+        <div class="project-tags">
+          <span class="project-pill">Cloud Concepts</span>
+          <span class="project-pill">System Design</span>
+          <span class="project-pill">AI Awareness</span>
+        </div>
+
+        <!-- Action -->
+        <div class="project-actions">
+          <span class="github-pill" onclick="this.classList.toggle('active')">
+            GitHub (Coming Soon)
+          </span>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card reveal delay">
+        <h3 class="text-xl font-semibold mb-3">
+          Mini Programming Projects
+        </h3>
+
+        <p class="text-gray-400 mb-5 leading-relaxed">
+          Collection of mini projects like number guessing games and
+          calculators to strengthen programming logic and fundamentals.
+        </p>
+
+        <!-- Tech Pills -->
+        <div class="project-tags">
+          <span class="project-pill">C / C++</span>
+          <span class="project-pill">Java</span>
+          <span class="project-pill">Python Basics</span>
+        </div>
+
+        <!-- Action -->
+        <div class="project-actions">
+          <span class="github-pill" onclick="this.classList.toggle('active')">
+            GitHub (Coming Soon)
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SKILLS SECTION ================= -->
+<section id="skills" class="py-24 bg-gray-950">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-14 reveal">
+      My <span class="text-cyan-400">Skills</span>
+    </h2>
+
+    <div class="skills-grid">
+  
+  <!-- Frontend -->
+  <div class="skill-card reveal">
+    <h3 class="skill-title">Frontend</h3>
+    <div class="skill-tags">
+      <span class="skill-pill">HTML</span>
+      <span class="skill-pill">JavaScript</span>
+      <span class="skill-pill">Web Design</span>
+      <span class="skill-pill">CSS</span>
+    </div>
+  </div>
+
+  <!-- Cloud -->
+  <div class="skill-card reveal delay">
+    <h3 class="skill-title">Cloud</h3>
+    <div class="skill-tags">
+      <span class="skill-pill">Cloud Computing Basics</span>
+      <span class="skill-pill">Cloud services Awareness</span>
+      <span class="skill-pill">Scalability Concepts</span>
+    </div>
+  </div>
+
+  <!-- Programming & AI -->
+  <div class="skill-card reveal delay">
+    <h3 class="skill-title">Programming & AI</h3>
+    <div class="skill-tags">
+      <span class="skill-pill">C</span>
+      <span class="skill-pill">C++</span>
+      <span class="skill-pill">Java</span>
+      <span class="skill-pill">Python</span>
+      <span class="skill-pill">AI Fundamentals</span>
+    </div>
+  </div>
+
+<!-- Design Tools -->
+      <div class="tool-card reveal">
+        <h3 class="tool-title">Design</h3>
+        <div class="tool-tags">
+          <span class="tool-pill">Canva</span>
+          <span class="tool-pill">Figma</span>
+        </div>
+      </div>
+
+      <!-- Data & Visualization -->
+      <div class="tool-card reveal delay">
+        <h3 class="tool-title">Data & Visualization</h3>
+        <div class="tool-tags">
+          <span class="tool-pill">Tableau</span>
+          <span class="tool-pill">Excel</span>
+        </div>
+      </div>
+
+      <!-- Development Tools -->
+      <div class="tool-card reveal delay">
+        <h3 class="tool-title">Development</h3>
+        <div class="tool-tags">
+          <span class="tool-pill">VS Code</span>
+          <span class="tool-pill">Git</span>
+          <span class="tool-pill">GitHub</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE & EDUCATION ================= -->
+ <section id="experience" class="py-24 bg-gray-950">
+  <h2 class="text-3xl md:text-4xl font-bold text-center mb-20">
+    Experience & <span class="text-cyan-400">Education</span>
+  </h2>
+
+<div class="timeline-clean">
+
+  <div class="timeline-row">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+      <h3>B.Tech in Computer Science Engineering</h3>
+      <span class="timeline-meta">2024 – Present | DES Pune University</span>
+      <p>
+        Pursuing Computer Science with a strong focus on Cloud Computing,
+        Artificial Intelligence, and system design fundamentals.
+      </p>
+      <p class="timeline-muted">CGPA: 8.39</p>
+    </div>
+  </div>
+
+  <div class="timeline-row">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+      <h3>Student Member – IEEE</h3>
+      <span class="timeline-meta">2024 – Present</span>
+      <p>
+        Participated in technical talks, workshops, and peer-learning sessions
+        focused on emerging technologies and industry trends.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-row">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+      <h3>Event Volunteer</h3>
+      <span class="timeline-meta">2024 – Present | DES Pune University</span>
+      <p>
+        Assisted in organizing technical and cultural events, gaining experience
+        in teamwork, coordination, and communication.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-row">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+      <h3>Higher Secondary & Secondary Education</h3>
+      <span class="timeline-meta">2021 – 2023</span>
+      <p>Class XII – 80%</p>
+      <p>Class X – 95.4%</p>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact" class="py-24 bg-gray-950">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 reveal">
+      Let’s <span class="text-cyan-400">Connect</span>
+    </h2>
+
+    <p class="text-gray-400 max-w-2xl mx-auto mb-12 reveal delay">
+      I’m always open to learning opportunities, collaborations,
+      and discussions around Cloud Computing and AI.
+      Feel free to reach out through any of the platforms below.
+    </p>
+
+    <!-- Contact Cards -->
+    <div class="grid sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+
+      <!-- Email -->
+      <a
+        href="mailto:nehachavan6002@gmail.com"
+        class="contact-card reveal"
+      >
+        📧
+        <h3>Email</h3>
+        <p>nehachavan6002@gmail.com</p>
+      </a>
+
+      <!-- LinkedIn -->
+      <a
+        href="https://www.linkedin.com/in/neha-chavan-280178367"
+        target="_blank"
+        class="contact-card reveal delay"
+      >
+        💼
+        <h3>LinkedIn</h3>
+        <p>Connect with me</p>
+      </a>
+
+      <!-- GitHub -->
+      <a
+        href="https://github.com/Nehachavan03"
+        target="_blank"
+        class="contact-card reveal delay"
+      >
+        🧑‍💻
+        <h3>GitHub</h3>
+        <p>View my projects</p>
+      </a>
+
+      <div class="mt-14 reveal">
+  
+</div>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- Floating Cloud Lights -->
+<div class="cloud-orb orb-1"></div>
+<div class="cloud-orb orb-2"></div>
+<div class="cloud-orb orb-3"></div>
+<div class="cloud-orb orb-4"></div>
+  <script src="script.js"></script>
+</body>
+
+
+
+</html>

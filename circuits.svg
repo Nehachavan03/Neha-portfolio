@@ -1,0 +1,12 @@
+<svg
+  class="absolute inset-0 w-full h-full pointer-events-none hero-circuit"
+  viewBox="0 0 800 600"
+  preserveAspectRatio="xMidYMid slice"
+>
+  <path class="circuit-line slow"
+    d="M50 100 H300 V200 H500" />
+  <path class="circuit-line medium"
+    d="M200 50 V300 H600" />
+  <path class="circuit-line fast"
+    d="M100 400 H700" />
+</svg>
