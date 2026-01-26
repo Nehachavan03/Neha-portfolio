@@ -1,4 +1,13 @@
-/* ===== Animated Gradient Background ===== */
+/* ================= ROOT ================= */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================= BACKGROUND ================= */
 .animated-bg {
   background: linear-gradient(120deg, #020617, #0f172a, #0e7490);
   background-size: 300% 300%;
@@ -11,194 +20,35 @@
   100% { background-position: 0% 50%; }
 }
 
-/* ===== Glassmorphism Card ===== */
-.glass-card {
+/* ================= GLASS ================= */
+.glass-card,
+.project-card,
+.skill-card,
+.about-card,
+.contact-card,
+.tool-card {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(14px);
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
-/* ===== Buttons ===== */
-.btn-primary {
-  padding: 12px 28px;
-  border-radius: 999px;
-  background: #22d3ee;
-  color: black;
-  font-weight: 600;
-  transition: all 0.3s ease;
+/* ================= NAVBAR ================= */
+.glass-nav {
+  background: rgba(2, 6, 23, 0.8);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
-.btn-primary:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(34, 211, 238, 0.5);
-}
-
-.btn-secondary {
-  padding: 12px 28px;
-  border-radius: 999px;
-  border: 2px solid #22d3ee;
-  color: #22d3ee;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.btn-secondary:hover {
-  background: #22d3ee;
-  color: black;
-}
-
-/* ===== About Cards ===== */
-.about-card {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  padding: 16px 20px;
-  border-radius: 14px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.about-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(34, 211, 238, 0.25);
-}
-
-/* ===== Scroll Reveal ===== */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.reveal.delay {
-  transition-delay: 0.2s;
-}
-
-/* ===== Project Cards ===== */
-.project-card {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(14px);
-  border-radius: 18px;
-  padding: 28px;
-  transition: all 0.4s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(34, 211, 238, 0.2);
-}
-
-/* Tech Tags */
-.tag {
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 12px;
-  background: rgba(34, 211, 238, 0.15);
-  color: #67e8f9;
-}
-
-/* ===== Skill Cards ===== */
-.skill-card {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(14px);
-  border-radius: 18px;
-  padding: 26px;
-  transition: all 0.4s ease;
-}
-
-.skill-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 35px rgba(34, 211, 238, 0.18);
-}
-
-/* ===== Cloud Floating Orbs ===== */
-.cloud-orb {
-  position: fixed;
-  width: 260px;
-  height: 260px;
-  background: radial-gradient(circle, rgba(34,211,238,0.25), transparent 70%);
-  filter: blur(40px);
-  z-index: 0;
-  animation: floatCloud 18s infinite alternate ease-in-out;
-}
-
-.orb-1 {
-  top: 10%;
-  left: -100px;
-}
-
-.orb-2 {
-  bottom: 20%;
-  right: -120px;
-  animation-duration: 22s;
-}
-
-.orb-3 {
-  top: 50%;
-  right: 20%;
-  animation-duration: 26s;
-}
-
-@keyframes floatCloud {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-80px);
-  }
-}
-
-/* ===== Timeline ===== */
-.timeline-item {
-  position: relative;
-  padding-left: 10px;
-}
-
-.timeline-dot {
-  position: absolute;
-  left: -49px;
-  top: 6px;
-  width: 14px;
-  height: 14px;
-  background: #22d3ee;
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba(34, 211, 238, 0.7);
-}
-
-/* ===== Contact Cards ===== */
-.contact-card {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(14px);
-  border-radius: 18px;
-  padding: 28px 20px;
-  text-align: center;
-  transition: all 0.4s ease;
+.nav-link {
   color: #e5e7eb;
+  transition: color 0.2s ease;
 }
 
-.contact-card h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 10px 0 6px;
+.nav-link:hover {
+  color: #22d3ee;
 }
 
-.contact-card p {
-  font-size: 14px;
-  color: #9ca3af;
-}
-
-.contact-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(34, 211, 238, 0.25);
-  color: white;
-}
-
-/* Active navbar link */
 .nav-link.active {
   color: #22d3ee;
   position: relative;
@@ -215,19 +65,667 @@
   border-radius: 2px;
 }
 
-/* Resume CTA pulse */
-.pulse-resume {
-  animation: pulseGlow 3s infinite;
+/* ================= HERO ================= */
+.hero-boot {
+  animation: bootIn 0.8s ease-out both;
 }
 
-@keyframes pulseGlow {
-  0% {
-    box-shadow: 0 0 0 rgba(34, 211, 238, 0.0);
+@keyframes bootIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
   }
-  50% {
-    box-shadow: 0 0 20px rgba(34, 211, 238, 0.6);
-  }
-  100% {
-    box-shadow: 0 0 0 rgba(34, 211, 238, 0.0);
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
+
+/* ================= HERO BUTTON HOVER GLOW ================= */
+
+/* Outline buttons (Download + Contact) */
+.btn-secondary {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover pop + glow */
+.btn-secondary:hover {
+  background: rgba(34, 211, 238, 0.15);
+  color: #020617;
+
+  transform: translateY(-3px);
+  box-shadow:
+    0 0 14px rgba(34, 211, 238, 0.7),
+    0 0 30px rgba(34, 211, 238, 0.45);
+}
+
+/* Extra smoothness */
+.btn-secondary {
+  transition: all 0.25s ease;
+}
+
+/* Keep primary stronger */
+.btn-primary:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow:
+    0 0 20px rgba(34, 211, 238, 0.8),
+    0 0 40px rgba(34, 211, 238, 0.6);
+}
+
+
+/* ================= BUTTONS ================= */
+.btn-primary {
+  padding: 12px 28px;
+  border-radius: 999px;
+  background: #22d3ee;
+  color: black;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(34, 211, 238, 0.5);
+}
+
+.btn-secondary {
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: 2px solid #22d3ee;
+  color: #22d3ee;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #22d3ee;
+  color: black;
+}
+
+/* ================= ABOUT OVAL PILLS ================= */
+
+.about-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px 22px;
+  border-radius: 999px;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+
+  background: rgba(34, 211, 238, 0.12);
+  color: #e5faff;
+
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  backdrop-filter: blur(10px);
+
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+/* Hover → pop + glow */
+.about-pill:hover {
+  transform: translateY(-4px) scale(1.03);
+  background: rgba(34, 211, 238, 0.25);
+
+  box-shadow:
+    0 0 12px rgba(34, 211, 238, 0.6),
+    0 0 30px rgba(34, 211, 238, 0.35);
+}
+
+/* Mobile tweak */
+@media (max-width: 640px) {
+  .about-pill {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+}
+
+/* ================= SKILLS GRID ================= */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 20px;
+  row-gap: 20px;
+
+  align-items: start;
+
+  /* 🔥 THIS FIXES THE BIG GAP */
+  grid-auto-rows: min-content;
+
+  margin-top: 20px;
+}
+
+
+/* ================= TOOLS GRID ================= */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 24px; /* 🔥 REDUCED (main fix) */
+  align-items: start;
+}
+
+/* ================= SKILL / TOOL CARDS ================= */
+.skill-card,
+.tool-card {
+  padding: 24px;
+  transition: all 0.3s ease;
+  height:100%;
+}
+
+.skill-card {
+  height: fit-content;
+}
+
+.skill-card:hover,
+.tool-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(34, 211, 238, 0.18);
+}
+
+/* Titles */
+.skill-title,
+.tool-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* ================= PILLS ================= */
+.skill-tags,
+.tool-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-pill,
+.tool-pill {
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: rgba(34, 211, 238, 0.12);
+  color: #67e8f9;
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  transition: all 0.25s ease;
+}
+
+.skill-pill:hover,
+.tool-pill:hover {
+  background: rgba(34, 211, 238, 0.25);
+  box-shadow:
+    0 0 10px rgba(34, 211, 238, 0.6),
+    0 0 25px rgba(34, 211, 238, 0.35);
+  transform: translateY(-2px);
+}
+
+.skill-pill.active,
+.tool-pill.active {
+  background: rgba(34, 211, 238, 0.4);
+  color: #020617;
+  box-shadow:
+    0 0 14px rgba(34, 211, 238, 0.9),
+    0 0 35px rgba(34, 211, 238, 0.6);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .skills-grid,
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .skills-grid,
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= FLOATING ORBS ================= */
+.cloud-orb {
+  position: fixed;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(8,95,109,0.55), transparent 70%);
+  filter: blur(40px);
+  animation: floatCloud 18s infinite alternate ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes floatCloud {
+  to { transform: translateY(-80px); }
+}
+
+/* ================= SCROLL REVEAL ================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px) scale(0.96);
+  filter: blur(4px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+/* ================= PROJECT CARDS ================= */
+
+.project-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  border-radius: 22px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: all 0.35s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 25px 60px rgba(34, 211, 238, 0.18);
+}
+
+/* ================= PROJECT PILLS ================= */
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.project-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 18px;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+
+  background: rgba(34, 211, 238, 0.12);
+  color: #67e8f9;
+
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  transition: all 0.25s ease;
+}
+
+.project-pill:hover {
+  transform: translateY(-2px) scale(1.04);
+  background: rgba(34, 211, 238, 0.25);
+  box-shadow:
+    0 0 12px rgba(34, 211, 238, 0.6),
+    0 0 30px rgba(34, 211, 238, 0.35);
+}
+
+/* ================= PROJECT BUTTONS ================= */
+
+/* ================= PROJECT CARDS ================= */
+
+.project-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  border-radius: 22px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: all 0.35s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(34, 211, 238, 0.18);
+}
+
+/* ================= PROJECT TAG PILLS ================= */
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.project-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 18px;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  color: #67e8f9;
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.35);
+
+  transition: all 0.25s ease;
+}
+
+.project-pill:hover {
+  transform: translateY(-2px);
+  background: rgba(34, 211, 238, 0.22);
+  box-shadow:
+    0 0 12px rgba(34, 211, 238, 0.6),
+    0 0 26px rgba(34, 211, 238, 0.35);
+}
+
+/* ================= GITHUB COMING SOON PILL ================= */
+
+/* ================= GITHUB COMING SOON PILL ================= */
+
+.project-actions {
+  margin-top: 10px;
+}
+
+.github-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 22px;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  color: #67e8f9;
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.35);
+
+  cursor: pointer;
+  user-select: none;
+
+  transition: all 0.25s ease;
+}
+
+/* 🟦 HOVER → soft glow */
+.github-pill:hover {
+  background: rgba(34, 211, 238, 0.22);
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 10px rgba(34, 211, 238, 0.55),
+    0 0 22px rgba(34, 211, 238, 0.35);
+}
+
+/* ✨ CLICK → strong glow */
+.github-pill.active {
+  background: rgba(34, 211, 238, 0.38);
+  color: #020617;
+
+  transform: translateY(-2px) scale(1.04);
+  box-shadow:
+    0 0 18px rgba(34, 211, 238, 0.95),
+    0 0 40px rgba(34, 211, 238, 0.6);
+}
+
+/* ================= EXPERIENCE & EDUCATION ================= */
+
+#experience {
+  position: relative;
+}
+
+/* Timeline wrapper */
+.timeline-clean {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Each timeline card */
+.timeline-row {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+
+  padding: 28px 32px;
+
+  transition: all 0.35s ease;
+}
+
+/* Hover effect */
+.timeline-row:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 18px 40px rgba(34, 211, 238, 0.18),
+    inset 0 0 0 1px rgba(34, 211, 238, 0.15);
+}
+
+/* Remove unused dot */
+.timeline-dot {
+  display: none;
+}
+
+/* Content */
+.timeline-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.timeline-meta {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #22d3ee;
+  margin-bottom: 14px;
+}
+
+/* Description text */
+.timeline-content p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Muted extra info */
+.timeline-muted {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .timeline-row {
+    padding: 22px 20px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* ================= TIMELINE ACCENT (NON-BREAKING) ================= */
+
+/* Wrapper becomes reference */
+.timeline-clean {
+  position: relative;
+  padding-left: 48px; /* space for timeline */
+}
+
+/* Vertical line */
+.timeline-clean::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(34, 211, 238, 0.6),
+    rgba(34, 211, 238, 0.15)
+  );
+}
+
+/* Timeline dot per card */
+.timeline-row {
+  position: relative;
+}
+
+.timeline-row::before {
+  content: "";
+  position: absolute;
+
+  left: -32px;        /* aligns on line */
+  top: 36px;          /* visually centered */
+
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  background: #22d3ee;
+  box-shadow:
+    0 0 0 6px rgba(34, 211, 238, 0.25),
+    0 0 18px rgba(34, 211, 238, 0.8);
+}
+
+/* Mobile safety */
+@media (max-width: 640px) {
+  .timeline-clean {
+    padding-left: 36px;
+  }
+
+  .timeline-clean::before {
+    left: 12px;
+  }
+
+  .timeline-row::before {
+    left: -28px;
+  }
+}
+
+/* ================= CONTACT CARDS – FINAL POLISH ================= */
+
+.contact-card {
+  position: relative;
+  padding: 28px 24px;
+  border-radius: 28px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.02)
+  );
+
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  text-align: center;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+/* subtle gradient edge */
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(34, 211, 238, 0.35),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* icon styling */
+.contact-card h3 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.contact-card p {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+/* hover magic */
+.contact-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow:
+    0 20px 60px rgba(34, 211, 238, 0.18),
+    inset 0 0 0 1px rgba(34, 211, 238, 0.25);
+}
+
+.contact-card:hover::before {
+  opacity: 1;
+}
+
+/* emoji/icon float */
+.contact-card:hover {
+  animation: floatCard 3s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(-10px) scale(1.02);
+  }
+  50% {
+    transform: translateY(-14px) scale(1.02);
+  }
+}
+
+/* click / focus feedback */
+.contact-card:active {
+  transform: scale(0.98);
+  box-shadow:
+    0 0 25px rgba(34, 211, 238, 0.45);
+}
+
+/* mobile spacing safety */
+@media (max-width: 640px) {
+  .contact-card {
+    padding: 24px 20px;
+  }
+}
+
+
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: #22d3ee;
+  width: 0%;
+  z-index: 9999;
+}
+
+
+
+section, header {
+  position: relative;
+  z-index: 1;
+}
+
+
