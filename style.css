@@ -728,4 +728,33 @@ section, header {
   z-index: 1;
 }
 
+/* ================= FOOTER ================= */
 
+.site-footer {
+  margin-top: 120px;
+  padding: 24px 12px;
+
+  text-align: center;
+  font-size: 0.85rem;
+  color: #94a3b8;
+
+  background: linear-gradient(
+    to top,
+    rgba(2, 6, 23, 0.6),
+    transparent
+  );
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-name {
+  color: #22d3ee;
+  font-weight: 500;
+}
+
+/* subtle hover glow */
+.site-footer:hover .footer-name {
+  text-shadow:
+    0 0 6px rgba(34, 211, 238, 0.6),
+    0 0 14px rgba(34, 211, 238, 0.4);
+}
