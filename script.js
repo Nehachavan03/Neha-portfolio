@@ -150,7 +150,7 @@ class Particle {
     if (this.radius < 10) this.reset();
 
     ctx.beginPath();
-    ctx.fillStyle = `rgba(34,211,238,${this.alpha})`;
+    ctx.fillStyle = `rgba(56,189,248,${this.alpha})`;
     ctx.arc(x, y, this.size, 0, Math.PI * 2);
     ctx.fill();
   }
